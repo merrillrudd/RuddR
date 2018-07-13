@@ -1,0 +1,13 @@
+Package: RuddR
+Type: Package
+Title: Helpful R functions
+Version: 1.0.0
+Date: 2018-07-13
+Author: Merrill Rudd
+Maintainer: Merrill Rudd <merrillrudd@gmail.com>
+Description: Frequently used R functions across multiple projects
+License: MIT License
+Imports:  
+	tidyverse,
+	ggplot2
+RoxygenNote: 5.0.1
