@@ -7,7 +7,7 @@ Author: Merrill Rudd
 Maintainer: Merrill Rudd <merrillrudd@gmail.com>
 Description: Frequently used R functions across multiple projects
 License: MIT License
-Imports:  
+Imports: 
 	tidyverse,
 	ggplot2
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.0
