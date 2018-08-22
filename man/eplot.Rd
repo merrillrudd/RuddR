@@ -20,4 +20,3 @@ empty plot
 \author{
 M.B. Rudd
 }
-

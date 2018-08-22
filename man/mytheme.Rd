@@ -20,4 +20,3 @@ theme for use with figures from ggplot2
 \author{
 Darcy Webber
 }
-
