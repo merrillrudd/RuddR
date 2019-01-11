@@ -18,7 +18,8 @@ Check_Identifiable2 = function( obj ){
   List[["WhichBad"]] = which( List[["Eigen"]]$values < sqrt(.Machine$double.eps) )
 
   # Check for parameters
-  RowMax = apply( matrix(List[["Eigen"]]$vectors[,List[["WhichBad"]]], nrow=length(List[["WhichBad"]])), MARGIN=1, FUN=function(vec){max(abs(vec))} )
+  if(is.matrix(List[["Eigen"]]$vectors[,List[["WhichBad"]]])) RowMax = apply( List[["Eigen"]]$vectors[,List[["WhichBad"]]], MARGIN=1, FUN=function(vec){max(abs(vec))} )
+  if(!is.matrix(List[["Eigen"]]$vectors[,List[["WhichBad"]]])) RowMax = max(abs(List[["Eigen"]]$vectors[,List[["WhichBad"]]]))
   List[["BadParams"]] = data.frame("Param"=names(obj$par), "MLE"=ParHat, "Param_check"=ifelse(RowMax>0.1, "Bad","OK"))
 
   # Message
